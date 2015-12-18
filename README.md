@@ -91,5 +91,41 @@ I downloaded the psd template and transformed to "template.png".
       ```
         npm install --save-dev gulp-coffee
       ```
-    
+    6. Jade:
+      ```
+        npm install --save-dev gulp-jade
+      ```
+    7. Stylus:
+      ```
+        npm install --save-dev gulp-stylus
+      ```
+    8. Connection (for serving the page and launching a browser):
+      ```
+        npm install --save-dev gulp-connect-multi
+      ```
+    9. Sourcemaps (for debugging purposes):
+      ```
+        npm install --save-dev gulp-sourcemaps
+      ```
+    10. CssNano (For css compression):
+      ```
+        npm install --save-dev gulp-cssnano
+      ```
+    11. PostStylus (For postcss with Stylus compatibility):
+      ```
+        npm install --save-dev poststylus
+      ```
+      1. Lost:
+        ```
+          npm install --save-dev lost
+        ```
+      2. Autoprefixer
+        ```
+          npm install --save-dev autoprefixer
+        ```
+
+2. Templating decisions:
+    *Comming soon... *, I'm currently doing the template design.. and reading
+    about Lost.
+
 
