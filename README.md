@@ -35,4 +35,52 @@ For example:
   </div>
 ```
 
-###### Please fork this repository and commit each step of your process.
+#_reload##### Please fork this repository and commit each step of your process.
+
+** Below, i'll posting my solution **
+
+I downloaded the psd template and transformed to "template.png".
+
+Project initialization
+
+    npm init
+
+    Install CoffeScript:
+
+        npm install -g coffee-script
+        npm install --save-dev coffee-script
+
+    Install Jade:
+
+        npm install -g jade
+        npm install --save-dev jade
+
+    Install Stylus:
+
+        npm install -g stylus
+        npm install --save-dev stylus
+
+    Install Gulp:
+
+        npm install --global gulp
+        npm install --save-dev gulp
+
+    Install Gulp modules:
+
+        Utils (logging)
+            npm install --save-dev gulp-util
+
+        File Concatenation
+            npm install --save-dev gulp-concat
+
+        Watch for changes
+            npm install --save-dev gulp-watch
+
+        Minimification
+            npm install --save-dev gulp-uglify
+
+        CoffeScript
+            npm install --save-dev gulp-coffee
+
+    
+
