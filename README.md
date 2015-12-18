@@ -35,52 +35,61 @@ For example:
   </div>
 ```
 
-#_reload##### Please fork this repository and commit each step of your process.
+###### Please fork this repository and commit each step of your process.
 
-** Below, i'll posting my solution **
+**Below, i'll posting my solution**
 
 I downloaded the psd template and transformed to "template.png".
 
-Project initialization
+1. Project initialization
 
+  ```
     npm init
-
-    Install CoffeScript:
-
-        npm install -g coffee-script
-        npm install --save-dev coffee-script
-
-    Install Jade:
-
-        npm install -g jade
-        npm install --save-dev jade
-
-    Install Stylus:
-
-        npm install -g stylus
-        npm install --save-dev stylus
-
-    Install Gulp:
-
-        npm install --global gulp
-        npm install --save-dev gulp
-
-    Install Gulp modules:
-
-        Utils (logging)
-            npm install --save-dev gulp-util
-
-        File Concatenation
-            npm install --save-dev gulp-concat
-
-        Watch for changes
-            npm install --save-dev gulp-watch
-
-        Minimification
-            npm install --save-dev gulp-uglify
-
-        CoffeScript
-            npm install --save-dev gulp-coffee
-
+  ```
+  1. Install CoffeScript:
+  
+    ```
+      npm install -g coffee-script
+      npm install --save-dev coffee-script
+    ```
+  2. Install Jade:
+  
+    ```
+      npm install -g jade
+      npm install --save-dev jade
+    ```
+  3. Install Stylus:
+  
+    ```
+      npm install -g stylus
+      npm install --save-dev stylus
+    ```
+  4. Install Gulp:
+  
+    ```
+      npm install --global gulp
+      npm install --save-dev gulp
+    ```
+  5. Install Gulp modules:
+    1. Utils (logging):
+      ```
+        npm install --save-dev gulp-util
+      ```
+    2. File Concatenation:
+      ```
+        npm install --save-dev gulp-concat
+      ```
+    3. Watch for changes:
+      ```
+        npm install --save-dev gulp-watch
+      ```
+    4. Minimification:
+      ```
+        npm install --save-dev gulp-uglify
+      ```
+    5. CoffeScript:
+      ```
+        npm install --save-dev gulp-coffee
+      ```
     
 
