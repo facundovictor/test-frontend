@@ -34,7 +34,7 @@ gulp.task('connect', connect.server({
 
 // CoffeeScript compilation task with connection reload
 var coffee_src = './src/coffee/**/*.coffee';
-gulp.task('coffee_reload', function() {
+gulp.task('coffee_reload', function(){
     gulp.src(coffee_src)
         .pipe(sourcemaps.init())
         .pipe(coffee({bare: true}).on('error', gutil.log))
@@ -46,7 +46,7 @@ gulp.task('coffee_reload', function() {
 });
 
 // CoffeeScript compilation task
-gulp.task('coffee', function() {
+gulp.task('coffee', function(){
     gulp.src(coffee_src)
         .pipe(coffee({bare: true}).on('error', gutil.log))
         .pipe(concat('app.js'))
@@ -83,7 +83,7 @@ gulp.task('jade', function(){
 
 // Stylus compilation task with connection reload
 var stylus_src = './src/stylus/**/*.styl';
-gulp.task('stylus_reload', function () {
+gulp.task('stylus_reload', function(){
     gulp.src(stylus_src)
         .pipe(sourcemaps.init())
         .pipe(stylus({
@@ -91,7 +91,7 @@ gulp.task('stylus_reload', function () {
                 poststylus(['autoprefixer', 'lost'])
             ]
         }))
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(sourcemaps.write('./map'))
         .pipe(gulp.dest('./public/css/'))
         .pipe(connect.reload());
@@ -99,31 +99,43 @@ gulp.task('stylus_reload', function () {
 
 // Stylus compilation task
 var stylus_src = './src/stylus/**/*.styl';
-gulp.task('stylus', function () {
+gulp.task('stylus', function(){
     gulp.src(stylus_src)
         .pipe(stylus({
             use: [
                 poststylus(['autoprefixer', 'lost'])
             ]
         }))
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(gulp.dest('./public/css/'));
 });
 
+
+// ----------------------------------------------------------------------------
+// IMAGES
+
+// Copy of images
+var png_src = './src/images/**/*.png',
+    svg_src = './src/images/**/*.svg';
+gulp.task('images', function(){
+    gulp.src(png_src).pipe(gulp.dest('./public/images/'));
+    gulp.src(svg_src).pipe(gulp.dest('./public/images/'));
+});
 // ----------------------------------------------------------------------------
 // GLOBAL TASKS
 
 // Watch task
 gulp.task('watch', function () {
-    gulp.watch([coffee_src], ['coffee']);
-    gulp.watch([jade_src], ['jade']);
-    gulp.watch([stylus_src], ['stylus']);
+    gulp.watch([coffee_src], ['coffee_reload']);
+    gulp.watch([jade_src], ['jade_reload']);
+    gulp.watch([stylus_src], ['stylus_reload']);
 });
 
 // Simple build
 gulp.task('build', [
     'coffee',
     'jade',
+    'images',
     'stylus'
 ]);
 
@@ -131,6 +143,7 @@ gulp.task('build', [
 gulp.task('reloadable_build', [
     'coffee_reload',
     'jade_reload',
+    'images',
     'stylus_reload'
 ]);
 

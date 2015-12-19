@@ -1,0 +1,71 @@
+.menu .presentation {
+  height: profile-presentation-height;
+  width: profile-presentation-width;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #f00;
+}
+.menu .presentation .profile {
+  margin: profile-image-margin auto;
+  margin-bottom: calc(profile-image-margin - 3vw);
+}
+.menu .presentation .profile img {
+  border-radius: 50%;
+  width: profile-image-width;
+}
+.menu .presentation .profile .flag {
+  position: absolute;
+  top: calc(profile-flag-top + profile-image-margin);
+  left: calc(profile-flag-left + profile-image-margin);
+}
+.menu .presentation .profile .flag {
+  width: calc(profile-flag-image-size - 1vw);
+  height: calc(profile-flag-image-size - 1vw);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid menu-background-color;
+}
+.menu .presentation .profile .flag svg {
+  position: relative;
+  top: -0.5vw;
+  left: -0.5vw;
+  width: profile-flag-image-size;
+  height: profile-flag-image-size;
+  background-color: flag-brazil-color-yellow;
+}
+.menu .presentation .profile .flag svg path {
+  fill: flag-brazil-color-blue;
+}
+.menu .presentation .profile .flag svg path:first-child {
+  fill: flag-brazil-color-green;
+}
+.menu .presentation h1,
+.menu .presentation h2 {
+  text-align: center;
+}
+.menu .presentation h1:nth-child(3) {
+  color: profile-title-color;
+  font-weight: bold;
+}
+.menu .presentation h2:nth-child(4):before {
+  content: '';
+  background-image: url("../images/svg/pin.svg");
+  height: 2vw;
+  width: 2vw;
+  background-size: 2vw;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
+.menu .data {
+  height: 130px;
+}
+
+/*# sourceMappingURL=map/menu.css.map */

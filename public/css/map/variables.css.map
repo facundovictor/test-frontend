@@ -1,0 +1,1 @@
+{"version":3,"sources":["variables.styl"],"names":[],"mappings":"AACA,0BAAA;AAGA,6BAAA","file":"variables.css","sourcesContent":["\n/* Left menu dimensions */\nmenu-width = 23.8vw\n\n/* Left profile dimensions */\nprofile-presentation-width = menu-width\nprofile-presentation-height = 29.8vw \n\n\n"],"sourceRoot":"/source/"}

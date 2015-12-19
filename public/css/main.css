@@ -1,0 +1,105 @@
+/* author: @facundovictor */
+/* Importing configuration */
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .menu {
+  background-color: #f3f7f7;
+  max-width: 23.8vw;
+  width: 23.8vw;
+}
+body .content {
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.menu .presentation {
+  height: 29.8vw;
+  width: 23.8vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #f00;
+}
+.menu .presentation .profile {
+  margin: 4vw auto;
+  margin-bottom: calc(4vw - 3vw);
+}
+.menu .presentation .profile img {
+  border-radius: 50%;
+  width: 12.3vw;
+}
+.menu .presentation .profile .flag {
+  position: absolute;
+  top: calc(9vw + 4vw);
+  left: calc(10vw + 4vw);
+}
+.menu .presentation .profile .flag {
+  width: calc(4vw - 1vw);
+  height: calc(4vw - 1vw);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #f3f7f7;
+}
+.menu .presentation .profile .flag svg {
+  position: relative;
+  top: -0.5vw;
+  left: -0.5vw;
+  width: 4vw;
+  height: 4vw;
+  background-color: #f5df41;
+}
+.menu .presentation .profile .flag svg path {
+  fill: #2d42f8;
+}
+.menu .presentation .profile .flag svg path:first-child {
+  fill: #56ff2c;
+}
+.menu .presentation h1,
+.menu .presentation h2 {
+  text-align: center;
+}
+.menu .presentation h1:nth-child(3) {
+  color: #545a5b;
+  font-weight: bold;
+}
+.menu .presentation h2:nth-child(4):before {
+  content: '';
+  background-image: url("../images/svg/pin.svg");
+  height: 2vw;
+  width: 2vw;
+  background-size: 2vw;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
+.menu .data {
+  height: 130px;
+}
+
+/*# sourceMappingURL=map/main.css.map */

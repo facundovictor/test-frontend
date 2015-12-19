@@ -1,0 +1,41 @@
+.menu
+    .presentation
+        height: profile-presentation-height
+        width: profile-presentation-width
+        display: flex
+        flex-direction: column
+
+        border-bottom: 1px solid red       
+
+        .profile
+            margin: profile-image-margin auto 
+            margin-bottom: "calc(%s - 3vw)" % profile-image-margin
+            img
+                border-radius: 50%
+                width: profile-image-width
+            .flag
+                position: absolute
+                top: "calc(%s + %s)" % (profile-flag-top profile-image-margin)
+                left: "calc(%s + %s)" % (profile-flag-left profile-image-margin)
+            @import './components/flag-brazil.styl' 
+
+        h1, h2
+            text-align: center
+        h1:nth-child(3)
+            color: profile-title-color
+            font-weight: bold
+        h2:nth-child(4):before
+            content: ''
+            background-image: url('../images/svg/pin.svg')
+            height: 2vw
+            width: 2vw
+            background-size: 2vw
+            display: block
+            overflow: hidden
+            position: absolute
+            
+
+    .data
+        height: 130px
+    
+    

@@ -1,0 +1,17 @@
+.flag
+    width: "calc(%s - 1vw)" % (profile-flag-image-size)
+    height: "calc(%s - 1vw)" % (profile-flag-image-size)
+    border-radius:50%
+    overflow: hidden;
+    border: 5px solid menu-background-color
+    svg
+        position: relative
+        top: -0.5vw
+        left: -0.5vw
+        width: profile-flag-image-size
+        height: profile-flag-image-size
+        background-color: flag-brazil-color-yellow 
+        path
+            fill: flag-brazil-color-blue
+        path:first-child
+            fill: flag-brazil-color-green
