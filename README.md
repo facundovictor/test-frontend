@@ -41,7 +41,7 @@ For example:
 
 I downloaded the psd template and transformed to "template.png".
 
-1. Project initialization
+1. **Project initialization**
 
   ```
     npm init
@@ -124,8 +124,7 @@ I downloaded the psd template and transformed to "template.png".
           npm install --save-dev autoprefixer
         ```
 
-2. Templating decisions:
-    *Comming soon... *, I'm currently doing the template design.. and reading
-    about Lost.
+2. **Templating decisions:**
+  *Comming soon...* I'm currently doing the template design.. and reading about Lost.
 
 
