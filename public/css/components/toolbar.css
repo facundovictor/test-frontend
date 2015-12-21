@@ -44,16 +44,16 @@
   clear: left;
 }
 .toolbar .btn div.about {
-  background-image: url("../images/credential.png");
+  background-image: url("../images/svg/credential.svg");
 }
 .toolbar .btn div.education {
-  background-image: url("../images/education.png");
+  background-image: url("../images/svg/education-grey.svg");
 }
 .toolbar .btn div.experience {
-  background-image: url("../images/work.png");
+  background-image: url("../images/svg/work-grey.svg");
 }
 .toolbar .btn div.skills {
-  background-image: url("../images/skills.png");
+  background-image: url("../images/svg/skills-grey.svg");
 }
 .toolbar .btn p {
   width: calc(99.999999% * 3/4);
@@ -63,6 +63,7 @@
   font-family: arial;
   font-size: toolbar-button-font-size;
   font-weight: bolder;
+  color: toolbar-button-inactive-color;
 }
 .toolbar .btn p:nth-child(n) {
   float: left;
@@ -80,6 +81,9 @@
 }
 .toolbar .btn.active {
   background-color: menu-active-background-color;
+}
+.toolbar .btn.active p {
+  color: #000;
 }
 .toolbar .btn:hover {
   background-color: menu-hover-background-color;

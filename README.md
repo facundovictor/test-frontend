@@ -128,7 +128,7 @@ I downloaded the psd template and transformed to "template.png".
 
  - Images: I don't have the images in a vectorized format. So, i collected several svg images and i'm attempting to modify them to fit the needs.
 
- - Fonts: I don't have the fonts, there are not specified in the PSD. So I asumed the default font and used Arial for some titles.
+ - Fonts: I don't have the fonts, there are not specified in the PSD. So I asumed the default font and used Arial for some titles, and sans-serif for text and links.
 
  - HTML main structure:
         - menu
@@ -145,6 +145,8 @@ I downloaded the psd template and transformed to "template.png".
   - Toolbar: Adopted the color #E8F1F1 for the event hover.
 
   - Menu: The menu will be hidden on hamburguer button click.
+
+  - Scrollbar: I don't know if the scrollbar corresponds to the text only, or to the entire document.
 
   - More... coming soon!
 

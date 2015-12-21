@@ -29,12 +29,20 @@ body {
 body .menu {
   background-color: #fcfdfd;
   max-width: 23.8vw;
-  min-width: 23.8vw;
   width: 23.8vw;
   overflow: hidden;
   -webkit-transition: width 1s;
   transition: width 1s;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 body .menu .presentation {
   background-color: #f3f7f7;
@@ -224,16 +232,16 @@ body .menu .toolbar .btn div:nth-child(4n + 1) {
   clear: left;
 }
 body .menu .toolbar .btn div.about {
-  background-image: url("../images/credential.png");
+  background-image: url("../images/svg/credential.svg");
 }
 body .menu .toolbar .btn div.education {
-  background-image: url("../images/education.png");
+  background-image: url("../images/svg/education-grey.svg");
 }
 body .menu .toolbar .btn div.experience {
-  background-image: url("../images/work.png");
+  background-image: url("../images/svg/work-grey.svg");
 }
 body .menu .toolbar .btn div.skills {
-  background-image: url("../images/skills.png");
+  background-image: url("../images/svg/skills-grey.svg");
 }
 body .menu .toolbar .btn p {
   width: calc(99.999999% * 3/4);
@@ -243,6 +251,7 @@ body .menu .toolbar .btn p {
   font-family: arial;
   font-size: 1.7vw;
   font-weight: bolder;
+  color: #8e9393;
 }
 body .menu .toolbar .btn p:nth-child(n) {
   float: left;
@@ -261,12 +270,76 @@ body .menu .toolbar .btn p:nth-child(4n + 1) {
 body .menu .toolbar .btn.active {
   background-color: #f3f7f7;
 }
+body .menu .toolbar .btn.active p {
+  color: #000;
+}
 body .menu .toolbar .btn:hover {
   background-color: #e8f1f1;
 }
+body .menu .moreinfo {
+  height: 25.24vw;
+  overflow: hidden;
+  padding: 2.3vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 0 0 0;
+}
+body .menu .moreinfo p,
+body .menu .moreinfo a {
+  font-size: 1.2vw;
+  margin-bottom: 0;
+  margin-top: auto;
+  font-family: sans-serif;
+}
+body .menu .moreinfo p.title {
+  font-weight: bold;
+}
+body .menu .moreinfo p.body {
+  margin-bottom: 2vw;
+}
+body .menu .moreinfo a {
+  color: #8e9393;
+  font-weight: bold;
+  padding-left: 2.5vw;
+}
+body .menu .moreinfo a:before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 2.5vw;
+  height: 1.2vw;
+  width: 1.2vw;
+}
+body .menu .moreinfo a.mail:before {
+  background-image: url("../images/svg/letter.svg");
+}
+body .menu .moreinfo a.home:before {
+  background-image: url("../images/svg/home.svg");
+}
+body .menu .moreinfo a.dribbble:before {
+  background-image: url("../images/svg/dribbble.svg");
+}
+body .menu .moreinfo a.twitter:before {
+  background-image: url("../images/svg/twitter.svg");
+  background-size: 1.5vw;
+  width: 1.7vw;
+}
+body .menu .moreinfo a.linkedin:before {
+  background-image: url("../images/svg/linkedin-inverted.svg");
+  background-size: 1.7vw;
+  width: 1.7vw;
+}
 body .menu.hidden {
   width: 0;
-  min-width: 0;
 }
 body .content {
   background-color: #fff;
@@ -274,6 +347,35 @@ body .content {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 5vw;
+  position: absolute;
+}
+body .content .menu-btn {
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+}
+body .content .text-container {
+  font-family: sans-serif;
+  line-height: 3vw;
+  font-size: 1.4vw;
+  overflow: hidden;
+}
+body .content .text-container p.diamond {
+  padding-left: 4vw;
+  margin: 0;
+}
+body .content .text-container p.diamond:before {
+  content: '';
+  width: 1.4vw;
+  height: 1.4vw;
+  background-image: url("../images/svg/diamond.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 6.5vw;
+  margin-top: 0.7vw;
 }
 
 /*# sourceMappingURL=map/main.css.map */

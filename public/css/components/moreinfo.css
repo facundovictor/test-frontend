@@ -1,0 +1,64 @@
+.moreinfo {
+  height: moreinfo-height;
+  overflow: hidden;
+  padding: 2.3vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 0 0 0;
+}
+.moreinfo p,
+.moreinfo a {
+  font-size: moreinfo-font-size;
+  margin-bottom: 0;
+  margin-top: auto;
+  font-family: sans-serif;
+}
+.moreinfo p.title {
+  font-weight: bold;
+}
+.moreinfo p.body {
+  margin-bottom: 2vw;
+}
+.moreinfo a {
+  color: moreinfo-link-color;
+  font-weight: bold;
+  padding-left: 2.5vw;
+}
+.moreinfo a:before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 2.5vw;
+  height: moreinfo-font-size;
+  width: moreinfo-font-size;
+}
+.moreinfo a.mail:before {
+  background-image: url("../images/svg/letter.svg");
+}
+.moreinfo a.home:before {
+  background-image: url("../images/svg/home.svg");
+}
+.moreinfo a.dribbble:before {
+  background-image: url("../images/svg/dribbble.svg");
+}
+.moreinfo a.twitter:before {
+  background-image: url("../images/svg/twitter.svg");
+  background-size: 1.5vw;
+  width: 1.7vw;
+}
+.moreinfo a.linkedin:before {
+  background-image: url("../images/svg/linkedin-inverted.svg");
+  background-size: 1.7vw;
+  width: 1.7vw;
+}
+
+/*# sourceMappingURL=../map/components/moreinfo.css.map */

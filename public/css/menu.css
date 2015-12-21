@@ -1,12 +1,20 @@
 .menu {
   background-color: menu-background-color;
   max-width: menu-width;
-  min-width: menu-width;
   width: menu-width;
   overflow: hidden;
   -webkit-transition: width 1s;
   transition: width 1s;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .menu .presentation {
   background-color: menu-active-background-color;
@@ -196,16 +204,16 @@
   clear: left;
 }
 .menu .toolbar .btn div.about {
-  background-image: url("../images/credential.png");
+  background-image: url("../images/svg/credential.svg");
 }
 .menu .toolbar .btn div.education {
-  background-image: url("../images/education.png");
+  background-image: url("../images/svg/education-grey.svg");
 }
 .menu .toolbar .btn div.experience {
-  background-image: url("../images/work.png");
+  background-image: url("../images/svg/work-grey.svg");
 }
 .menu .toolbar .btn div.skills {
-  background-image: url("../images/skills.png");
+  background-image: url("../images/svg/skills-grey.svg");
 }
 .menu .toolbar .btn p {
   width: calc(99.999999% * 3/4);
@@ -215,6 +223,7 @@
   font-family: arial;
   font-size: toolbar-button-font-size;
   font-weight: bolder;
+  color: toolbar-button-inactive-color;
 }
 .menu .toolbar .btn p:nth-child(n) {
   float: left;
@@ -233,12 +242,76 @@
 .menu .toolbar .btn.active {
   background-color: menu-active-background-color;
 }
+.menu .toolbar .btn.active p {
+  color: #000;
+}
 .menu .toolbar .btn:hover {
   background-color: menu-hover-background-color;
 }
+.menu .moreinfo {
+  height: moreinfo-height;
+  overflow: hidden;
+  padding: 2.3vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 0 0 0;
+}
+.menu .moreinfo p,
+.menu .moreinfo a {
+  font-size: moreinfo-font-size;
+  margin-bottom: 0;
+  margin-top: auto;
+  font-family: sans-serif;
+}
+.menu .moreinfo p.title {
+  font-weight: bold;
+}
+.menu .moreinfo p.body {
+  margin-bottom: 2vw;
+}
+.menu .moreinfo a {
+  color: moreinfo-link-color;
+  font-weight: bold;
+  padding-left: 2.5vw;
+}
+.menu .moreinfo a:before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 2.5vw;
+  height: moreinfo-font-size;
+  width: moreinfo-font-size;
+}
+.menu .moreinfo a.mail:before {
+  background-image: url("../images/svg/letter.svg");
+}
+.menu .moreinfo a.home:before {
+  background-image: url("../images/svg/home.svg");
+}
+.menu .moreinfo a.dribbble:before {
+  background-image: url("../images/svg/dribbble.svg");
+}
+.menu .moreinfo a.twitter:before {
+  background-image: url("../images/svg/twitter.svg");
+  background-size: 1.5vw;
+  width: 1.7vw;
+}
+.menu .moreinfo a.linkedin:before {
+  background-image: url("../images/svg/linkedin-inverted.svg");
+  background-size: 1.7vw;
+  width: 1.7vw;
+}
 .menu.hidden {
   width: 0;
-  min-width: 0;
 }
 
 /*# sourceMappingURL=map/menu.css.map */

@@ -1,2 +1,38 @@
+.content {
+  background-color: #fff;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 5vw;
+  position: absolute;
+}
+.content .menu-btn {
+  width: menu-button-size;
+  height: menu-button-size;
+  cursor: pointer;
+}
+.content .text-container {
+  font-family: sans-serif;
+  line-height: 3vw;
+  font-size: text-container-text-font-size;
+  overflow: hidden;
+}
+.content .text-container p.diamond {
+  padding-left: 4vw;
+  margin: 0;
+}
+.content .text-container p.diamond:before {
+  content: '';
+  width: text-container-text-font-size;
+  height: text-container-text-font-size;
+  background-image: url("../images/svg/diamond.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 6.5vw;
+  margin-top: 0.7vw;
+}
 
 /*# sourceMappingURL=map/content.css.map */
