@@ -37,7 +37,7 @@ For example:
 
 ###### Please fork this repository and commit each step of your process.
 
-**Below, i'll posting my solution**
+**Below, i'll be posting my solution**
 
 I downloaded the psd template and transformed to "template.png".
 
@@ -125,6 +125,22 @@ I downloaded the psd template and transformed to "template.png".
         ```
 
 2. **Templating decisions:**
-  *Comming soon...* I'm currently doing the template design.. and reading about Lost.
 
+ - Images: I don't have the images in a vectorized format. So, i collected several svg images and i'm attempting to modify them to fit the needs.
+
+ - Fonts: I don't have the fonts, there are not specified in the PSD. So I asumed the default font and used Arial for some titles.
+
+ - HTML main structure:
+        - menu
+            - Profile (Picture, name, title and location)
+            - Data (Age, Experience, Amount of projects)
+            - Toolbar (left buttons)
+            - More info (Little text and links)
+        - content
+            - Button (To toggle the menu visibilty)
+            - Text (Content relative to "About Me")
+            - Languages (A radial progress bar)
+            - Places (The map with the locations)
+
+  - More... coming soon!
 
