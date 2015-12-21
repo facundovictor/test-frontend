@@ -1,4 +1,4 @@
-.menu .presentation {
+.presentation {
   height: profile-presentation-height;
   max-height: profile-presentation-height;
   width: profile-presentation-width;
@@ -12,29 +12,29 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.menu .presentation .profile {
+.presentation .profile {
   margin: profile-image-margin auto;
   margin-bottom: calc(profile-image-margin - 3vw);
 }
-.menu .presentation .profile img {
+.presentation .profile img {
   border-radius: 50%;
   width: profile-image-width;
   display: block;
   margin: 0 auto;
 }
-.menu .presentation .profile .flag {
+.presentation .profile .flag {
   position: absolute;
   top: calc(profile-flag-top + profile-image-margin);
   left: calc(profile-flag-left + profile-image-margin);
 }
-.menu .presentation .profile .flag {
+.presentation .profile .flag {
   width: calc(profile-flag-image-size - 1vw);
   height: calc(profile-flag-image-size - 1vw);
   border-radius: 50%;
   overflow: hidden;
   border: 0.5vw solid menu-background-color;
 }
-.menu .presentation .profile .flag svg {
+.presentation .profile .flag svg {
   display: block;
   position: relative;
   top: -0.16vw;
@@ -43,35 +43,35 @@
   width: calc(profile-flag-image-size - 0.7vw);
   background-color: flag-brazil-color-yellow;
 }
-.menu .presentation .profile .flag svg path {
+.presentation .profile .flag svg path {
   fill: flag-brazil-color-blue;
 }
-.menu .presentation .profile .flag svg path:first-child {
+.presentation .profile .flag svg path:first-child {
   fill: flag-brazil-color-green;
 }
-.menu .presentation h1,
-.menu .presentation h2 {
+.presentation h1,
+.presentation h2 {
   text-align: center;
 }
-.menu .presentation h1:nth-child(2) {
+.presentation h1:nth-child(2) {
   font-family: arial;
   font-size: profile-name-font-size;
   margin: 2vw 0 0 0;
 }
-.menu .presentation h1:nth-child(3) {
+.presentation h1:nth-child(3) {
   color: profile-title-color;
   font-size: profile-title-font-size;
   font-weight: bold;
   margin: 0.4vw 0 0 0;
 }
-.menu .presentation h2 {
+.presentation h2 {
   font-style: italic;
   font-weight: 100;
 }
-.menu .presentation h2:nth-child(4) {
+.presentation h2:nth-child(4) {
   font-size: profile-location-font-size;
 }
-.menu .presentation h2:nth-child(4):before {
+.presentation h2:nth-child(4):before {
   content: '';
   background-image: url("../images/svg/pin.svg");
   height: profile-location-height;
@@ -83,58 +83,5 @@
   position: absolute;
   left: 4.5vw;
 }
-.menu .data {
-  height: data-height;
-  width: data-width;
-  overflow: hidden;
-  border-top-width: data-border-width;
-  border-bottom-width: data-border-width;
-  border-style: solid;
-  border-color: data-border-color;
-  background-color: data-border-color;
-}
-.menu .data div {
-  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
-  height: data-height;
-  overflow: hidden;
-  background-color: menu-background-color;
-}
-.menu .data div:nth-child(n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
-}
-.menu .data div:last-child {
-  margin-right: 0;
-}
-.menu .data div:nth-child(3n) {
-  margin-right: 0;
-}
-.menu .data div:nth-child(3n + 1) {
-  clear: left;
-}
-.menu .data div p {
-  height: calc(data-height / 2);
-  margin: 0;
-  text-align: center;
-  font-style: italic;
-}
-.menu .data div p:first-child {
-  font-size: data-value-font-size;
-  line-height: calc(data-height / 2);
-  font-weight: bold;
-  position: relative;
-}
-.menu .data div p:first-child > * {
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.menu .data div p:nth-child(2) {
-  font-size: data-title-font-size;
-}
 
-/*# sourceMappingURL=map/menu.css.map */
+/*# sourceMappingURL=../map/components/presentation.css.map */

@@ -1,0 +1,26 @@
+.data
+    height: data-height
+    width: data-width
+    overflow: hidden
+    border-top-width: data-border-width
+    border-bottom-width: data-border-width
+    border-style: solid
+    border-color: data-border-color
+    background-color: data-border-color
+    div
+        lost-column: 1/3 3 data-border-width
+        height: data-height
+        overflow: hidden
+        background-color: menu-background-color
+        p
+            height: "calc(%s / 2)" % data-height
+            margin: 0
+            text-align: center
+            font-style: italic
+        p:first-child
+            font-size: data-value-font-size
+            line-height: "calc(%s / 2)" % data-height
+            font-weight: bold
+            lost-align: bottom
+        p:nth-child(2)
+            font-size: data-title-font-size 

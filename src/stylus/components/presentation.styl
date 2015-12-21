@@ -1,0 +1,51 @@
+.presentation
+    height: profile-presentation-height
+    max-height: profile-presentation-height
+    width: profile-presentation-width
+    // overflow: hidden
+    display: flex
+    flex-direction: column
+
+    .profile
+        margin: profile-image-margin auto 
+        margin-bottom: "calc(%s - 3vw)" % profile-image-margin
+        img
+            border-radius: 50%
+            width: profile-image-width
+            display: block
+            margin: 0 auto
+        .flag
+            position: absolute
+            top: "calc(%s + %s)" % (profile-flag-top profile-image-margin)
+            left: "calc(%s + %s)" % (profile-flag-left profile-image-margin)
+        @import './flag-brazil.styl' 
+
+    h1, h2
+        text-align: center
+    h1:nth-child(2)
+        font-family: arial
+        font-size profile-name-font-size
+        margin: 2vw 0 0 0 
+    h1:nth-child(3)
+        color: profile-title-color
+        font-size: profile-title-font-size
+        font-weight: bold
+        margin: 0.4vw 0 0 0 
+    h2
+        font-style: italic
+        font-weight: 100
+    h2:nth-child(4)
+        font-size: profile-location-font-size
+    h2:nth-child(4):before
+        content: ''
+        background-image: url('../images/svg/pin.svg')
+        height: profile-location-height
+        width: profile-location-width
+        background-size: profile-location-height profile-location-width
+        background-repeat: no-repeat
+        display: block
+        overflow: hidden
+        position: absolute
+        left: 4.5vw
+        
+

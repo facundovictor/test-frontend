@@ -1,0 +1,12 @@
+.location {
+  width: calc(profile-location-size - 1vw);
+  height: calc(profile-location-size - 1vw);
+  position: absolute;
+}
+.location svg {
+  width: profile-location-size;
+  height: profile-location-size;
+  fill: profile-location-color;
+}
+
+/*# sourceMappingURL=../map/components/location.css.map */

@@ -98,7 +98,6 @@ gulp.task('stylus_reload', function(){
 });
 
 // Stylus compilation task
-var stylus_src = './src/stylus/**/*.styl';
 gulp.task('stylus', function(){
     gulp.src(stylus_src)
         .pipe(stylus({
