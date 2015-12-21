@@ -3,7 +3,7 @@
   height: calc(profile-flag-image-size - 1vw);
   border-radius: 50%;
   overflow: hidden;
-  border: 0.5vw solid menu-background-color;
+  border: 0.5vw solid menu-active-background-color;
 }
 .flag svg {
   display: block;

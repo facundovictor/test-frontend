@@ -1,0 +1,88 @@
+.toolbar {
+  overflow: hidden;
+  width: toolbar-width;
+}
+.toolbar .btn {
+  border-color: toolbar-button-border-color;
+  border-bottom-width: toolbar-button-border-width;
+  border-style: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  cursor: pointer;
+  width: toolbar-width;
+  width: 100%;
+  height: calc(99.99% * 1/4 - (4 - 4 * 1/4));
+  margin-bottom: 4;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.toolbar .btn:last-child {
+  margin-bottom: 0;
+}
+.toolbar .btn div {
+  background-repeat: no-repeat;
+  background-size: calc(toolbar-button-height / 2);
+  background-position: center;
+  height: toolbar-button-height;
+  width: calc(99.999999% * 1/4);
+  overflow: hidden;
+}
+.toolbar .btn div:nth-child(n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.toolbar .btn div:last-child {
+  margin-right: 0;
+}
+.toolbar .btn div:nth-child(4n) {
+  margin-right: 0;
+}
+.toolbar .btn div:nth-child(4n + 1) {
+  clear: left;
+}
+.toolbar .btn div.about {
+  background-image: url("../images/credential.png");
+}
+.toolbar .btn div.education {
+  background-image: url("../images/education.png");
+}
+.toolbar .btn div.experience {
+  background-image: url("../images/work.png");
+}
+.toolbar .btn div.skills {
+  background-image: url("../images/skills.png");
+}
+.toolbar .btn p {
+  width: calc(99.999999% * 3/4);
+  height: toolbar-button-height;
+  line-height: toolbar-button-height;
+  margin: 0;
+  font-family: arial;
+  font-size: toolbar-button-font-size;
+  font-weight: bolder;
+}
+.toolbar .btn p:nth-child(n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.toolbar .btn p:last-child {
+  margin-right: 0;
+}
+.toolbar .btn p:nth-child(4n) {
+  margin-right: 0;
+}
+.toolbar .btn p:nth-child(4n + 1) {
+  clear: left;
+}
+.toolbar .btn.active {
+  background-color: menu-active-background-color;
+}
+.toolbar .btn:hover {
+  background-color: menu-hover-background-color;
+}
+
+/*# sourceMappingURL=../map/components/toolbar.css.map */

@@ -3,6 +3,9 @@
 /* Importing configuration */
 @import './config.styl'
 
+*
+    user-select: none
+
 html, body
     margin: 0
     min-height: 100vh
@@ -14,13 +17,11 @@ html, body
 body
     display: flex
     flex-direction: row
-    .menu
-        background-color: menu-background-color
-        max-width: menu-width
-        width: menu-width
+
+    @import './menu.styl'
+
     .content
         background-color: white
         flex-grow: 1
 
-@import './menu.styl'
 @import './content.styl'

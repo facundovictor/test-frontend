@@ -1,7 +1,9 @@
 .presentation {
+  background-color: menu-active-background-color;
   height: profile-presentation-height;
   max-height: profile-presentation-height;
   width: profile-presentation-width;
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,7 +34,7 @@
   height: calc(profile-flag-image-size - 1vw);
   border-radius: 50%;
   overflow: hidden;
-  border: 0.5vw solid menu-background-color;
+  border: 0.5vw solid menu-active-background-color;
 }
 .presentation .profile .flag svg {
   display: block;

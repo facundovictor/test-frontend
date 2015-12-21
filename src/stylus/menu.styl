@@ -1,8 +1,16 @@
 .menu
+    background-color: menu-background-color
+    max-width: menu-width
+    width: menu-width
+    overflow: hidden
+    transition: width 1s
+    position: relative
+
     @import './components/presentation.styl'
 
     @import './components/data.styl'
 
-   .toolbar
-        .btn
-            p 
+    @import './components/toolbar.styl'
+
+.menu.hidden
+    width: 0

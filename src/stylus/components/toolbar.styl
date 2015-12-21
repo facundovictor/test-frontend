@@ -1,0 +1,44 @@
+.toolbar
+    overflow: hidden
+    width: toolbar-width
+    .btn
+        border-color: toolbar-button-border-color
+        border-bottom-width: toolbar-button-border-width           
+        border-style: solid
+        border-top: 0px
+        border-left: 0px
+        border-right: 0px
+        cursor: pointer
+        width: toolbar-width
+        lost-row: 1/4 4 0
+        overflow: hidden
+        transition: all 0.3s
+
+        div
+            background-repeat: no-repeat
+            background-size: "calc(%s / 2)" % toolbar-button-height
+            background-position: center
+            height: toolbar-button-height
+            lost-column: 1/4 4 0
+            overflow: hidden
+        div.about
+            background-image: url('../images/credential.png')
+        div.education
+            background-image: url('../images/education.png')
+        div.experience
+            background-image: url('../images/work.png')
+        div.skills
+            background-image: url('../images/skills.png')
+        p
+            lost-column: 3/4 4 0
+            height: toolbar-button-height
+            line-height: toolbar-button-height
+            margin: 0
+            font-family: arial
+            font-size: toolbar-button-font-size
+            font-weight: bolder
+
+    .btn.active
+        background-color: menu-active-background-color
+    .btn:hover
+        background-color: menu-hover-background-color
