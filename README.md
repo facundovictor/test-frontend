@@ -142,5 +142,9 @@ I downloaded the psd template and transformed to "template.png".
             - Languages (A radial progress bar)
             - Places (The map with the locations)
 
+  - Toolbar: Adopted the color #E8F1F1 for the event hover.
+
+  - Menu: The menu will be hidden on hamburguer button click.
+
   - More... coming soon!
 
