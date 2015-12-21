@@ -3,8 +3,8 @@
   max-width: menu-width;
   width: menu-width;
   overflow: hidden;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -250,6 +250,7 @@
 }
 .menu .moreinfo {
   height: moreinfo-height;
+  width: menu-width;
   overflow: hidden;
   padding: 2.3vw;
   display: -webkit-box;

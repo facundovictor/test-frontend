@@ -120,6 +120,14 @@ gulp.task('images', function(){
     gulp.src(png_src).pipe(gulp.dest('./public/images/'));
     gulp.src(svg_src).pipe(gulp.dest('./public/images/'));
 });
+
+// ----------------------------------------------------------------------------
+// DEPENDENCIES
+var d3_src = './node_modules/d3/d3.min.js';
+gulp.task('dependencies', function(){
+    gulp.src(d3_src).pipe(gulp.dest('./public/js/lib/'));
+});
+
 // ----------------------------------------------------------------------------
 // GLOBAL TASKS
 
@@ -132,17 +140,19 @@ gulp.task('watch', function () {
 
 // Simple build
 gulp.task('build', [
+    'dependencies',
+    'images',
     'coffee',
     'jade',
-    'images',
     'stylus'
 ]);
 
 // Reloadable build, requires a previous connection
 gulp.task('reloadable_build', [
+    'dependencies',
+    'images',
     'coffee_reload',
     'jade_reload',
-    'images',
     'stylus_reload'
 ]);
 

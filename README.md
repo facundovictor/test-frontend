@@ -123,6 +123,11 @@ I downloaded the psd template and transformed to "template.png".
         ```
           npm install --save-dev autoprefixer
         ```
+  6. Install D3:
+  
+    ```
+      npm install --save d3
+    ```
 
 2. **Templating decisions:**
 
@@ -144,9 +149,11 @@ I downloaded the psd template and transformed to "template.png".
 
   - Toolbar: Adopted the color #E8F1F1 for the event hover.
 
-  - Menu: The menu will be hidden on hamburguer button click.
+  - Menu: The menu hides on hamburguer button click (with little effect =D).
 
   - Scrollbar: I don't know if the scrollbar corresponds to the text only, or to the entire document.
+
+  - Graphics: For graphics and event handler i chose the D3 library.
 
   - More... coming soon!
 

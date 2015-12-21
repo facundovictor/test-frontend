@@ -1,5 +1,6 @@
 .moreinfo {
   height: moreinfo-height;
+  width: menu-width;
   overflow: hidden;
   padding: 2.3vw;
   display: -webkit-box;

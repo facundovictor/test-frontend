@@ -41,5 +41,8 @@
     "lost": "^6.6.2",
     "poststylus": "^0.2.2",
     "stylus": "^0.53.0"
+  },
+  "dependencies": {
+    "d3": "^3.5.12"
   }
 }

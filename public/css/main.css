@@ -31,8 +31,8 @@ body .menu {
   max-width: 23.8vw;
   width: 23.8vw;
   overflow: hidden;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -278,6 +278,7 @@ body .menu .toolbar .btn:hover {
 }
 body .menu .moreinfo {
   height: 25.24vw;
+  width: 23.8vw;
   overflow: hidden;
   padding: 2.3vw;
   display: -webkit-box;
