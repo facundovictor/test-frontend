@@ -82,5 +82,42 @@
   font-family: places-title-font-family;
   font-size: places-title-font-size;
 }
+.content .places .reference {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2vw;
+}
+.content .places .reference .point {
+  margin-right: 2vw;
+  padding-left: 2vw;
+  position: relative;
+}
+.content .places .reference .point p {
+  font-family: places-reference-font-family;
+  font-size: places-reference-font-size;
+  margin: 0 auto 0 2vw;
+}
+.content .places .reference .point div {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  height: places-reference-font-size;
+  width: places-reference-font-size;
+  top: 0;
+}
+.content .places .reference .point:first-child div {
+  background-color: places-reference-living-color;
+}
+.content .places .reference .point:last-child div {
+  background-color: places-reference-cultural-color;
+}
 
 /*# sourceMappingURL=map/content.css.map */

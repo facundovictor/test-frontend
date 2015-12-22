@@ -111,7 +111,7 @@ I downloaded the psd template and transformed to "template.png".
       ```
         npm install --save-dev gulp-cssnano
       ```
-    11. PostStylus (For postcss with Stylus compatibility):
+    11. [PostStylus](https://github.com/seaneking/poststylus) (For postcss with Stylus compatibility):
       ```
         npm install --save-dev poststylus
       ```
@@ -123,7 +123,7 @@ I downloaded the psd template and transformed to "template.png".
         ```
           npm install --save-dev autoprefixer
         ```
-  6. Install D3:
+  6. Install [D3](http://d3js.org/):
   
     ```
       npm install --save d3
@@ -165,7 +165,7 @@ I downloaded the psd template and transformed to "template.png".
 
         - Radial progress: Used the library [radial progress](http://www.brightpointinc.com/download/radial-progress-source-code/) and modified it with coffee and stylus to adjust on resize and.
 
-        - Maps: Used [Datamaps](http://datamaps.github.io/), i'll add a projection to automatically zoom it.
+        - Maps: Used [Datamaps](http://datamaps.github.io/). Used the 'mercator' projection with custom center and scale values.
 
   - More... coming soon!
 

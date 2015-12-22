@@ -248,8 +248,9 @@ locations = [
 ]
 
 
-# Recovers a square of the map that covers all the map points.
-limits = () ->
+# getLimits:
+#   Recovers a square of the map that covers all the map points.
+getLimits = () ->
     max_longitude = -180
     min_longitude = 180
     max_latitude = -90
@@ -267,6 +268,8 @@ limits = () ->
         max_lat: max_latitude
         min_lat: min_latitude
     }
+
+limits = getLimits()
 
 # LoadMap:
 #   Loads the map with the Map points as bubbles.
@@ -300,6 +303,40 @@ loadMap = ->
             'cultural': {fillKey: 'cultural'},
             'living': {fillKey: 'living'}
         }
+        setProjection: (element, options) ->
+
+            # Gets the new center of the map (longitude, latitude)
+            new_long = (limits.max_long - limits.min_long)/2 + limits.min_long
+            new_lat = (limits.max_lat - limits.min_lat)/2 + limits.min_lat + 2
+            new_center = [new_long, new_lat]
+
+            # Greatest distance between axis.
+            max_distance = Math.max(
+                limits.max_long - limits.min_long,
+                limits.max_lat - limits.min_lat
+            )
+
+            # Proportion of the map relative to the greatest distance.
+            min_margin = 360 - max_distance
+            new_scale = 150 + min_margin * 150 / 360
+
+            # Proportion of the new scale relative to the 'clientWidth' of
+            # the map.
+            new_proportional_scale = new_scale * element.clientWidth / 900
+
+            # Sets the new projection for zooming.
+            projection = d3.geo.mercator()
+                .center(new_center)
+                .scale(new_proportional_scale)
+                .translate([
+                    element.offsetWidth / 2,
+                    element.offsetHeight / 2
+                ])
+
+            {
+                path: d3.geo.path().projection(projection),
+                projection: projection
+            }
     })
 
     # Loads the location points as map bubbles.

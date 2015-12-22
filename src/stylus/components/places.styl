@@ -4,3 +4,31 @@
         color: places-title-color
         font-family: places-title-font-family
         font-size: places-title-font-size
+    .reference
+        display: flex
+        flex-direction: row
+        margin-top: 2vw
+       
+        .point
+            margin-right: 2vw
+            padding-left: 2vw
+            position: relative
+
+            p
+                font-family: places-reference-font-family
+                font-size: places-reference-font-size
+                margin: 0 auto 0 2vw
+
+            div
+                content: ''
+                border-radius: 50%
+                display: block
+                position: absolute
+                height: places-reference-font-size
+                width: places-reference-font-size
+                top: 0
+    
+        .point:first-child div
+            background-color: places-reference-living-color
+        .point:last-child div
+            background-color: places-reference-cultural-color

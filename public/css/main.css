@@ -475,5 +475,42 @@ body .content .places h1 {
   font-family: sans-serif;
   font-size: 1.7vw;
 }
+body .content .places .reference {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2vw;
+}
+body .content .places .reference .point {
+  margin-right: 2vw;
+  padding-left: 2vw;
+  position: relative;
+}
+body .content .places .reference .point p {
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  margin: 0 auto 0 2vw;
+}
+body .content .places .reference .point div {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  height: 1.5vw;
+  width: 1.5vw;
+  top: 0;
+}
+body .content .places .reference .point:first-child div {
+  background-color: #f92322;
+}
+body .content .places .reference .point:last-child div {
+  background-color: #3665ff;
+}
 
 /*# sourceMappingURL=map/main.css.map */

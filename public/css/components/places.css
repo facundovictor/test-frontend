@@ -6,5 +6,42 @@
   font-family: places-title-font-family;
   font-size: places-title-font-size;
 }
+.places .reference {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2vw;
+}
+.places .reference .point {
+  margin-right: 2vw;
+  padding-left: 2vw;
+  position: relative;
+}
+.places .reference .point p {
+  font-family: places-reference-font-family;
+  font-size: places-reference-font-size;
+  margin: 0 auto 0 2vw;
+}
+.places .reference .point div {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  height: places-reference-font-size;
+  width: places-reference-font-size;
+  top: 0;
+}
+.places .reference .point:first-child div {
+  background-color: places-reference-living-color;
+}
+.places .reference .point:last-child div {
+  background-color: places-reference-cultural-color;
+}
 
 /*# sourceMappingURL=../map/components/places.css.map */
