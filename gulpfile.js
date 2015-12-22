@@ -125,9 +125,15 @@ gulp.task('images', function(){
 // DEPENDENCIES
 var d3_src = './node_modules/d3/d3.min.js';
 var radialprogress_src = './src/lib/radialProgress.js';
+var topojson_src = './node_modules/topojson/topojson.min.js';
+var datamaps_src = './node_modules/datamaps/dist/datamaps.world.min.js';
 gulp.task('dependencies', function(){
-    gulp.src(d3_src).pipe(gulp.dest('./public/js/lib/'));
-    gulp.src(radialprogress_src).pipe(gulp.dest('./public/js/lib/'));
+    gulp.src([
+        d3_src,
+        radialprogress_src,
+        topojson_src,
+        datamaps_src
+    ]).pipe(gulp.dest('./public/js/lib/'));
 });
 
 // ----------------------------------------------------------------------------

@@ -12,7 +12,12 @@ window.onload = (evt) ->
     # Load all radials and keeps it for redraw them on resize
     radials = loadRadials()
 
+    # Load the map
+    loadMap()
+
 window.onresize = (evt) ->
     # Reloads all stored radials
     reloadRadials radials
 
+    # Resizes the map
+    reloadMap()

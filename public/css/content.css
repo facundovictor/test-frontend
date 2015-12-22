@@ -74,5 +74,13 @@
   width: languages-box-size;
   overflow: hidden;
 }
+.content .places {
+  margin-top: 2.7vw;
+}
+.content .places h1 {
+  color: places-title-color;
+  font-family: places-title-font-family;
+  font-size: places-title-font-size;
+}
 
 /*# sourceMappingURL=map/content.css.map */

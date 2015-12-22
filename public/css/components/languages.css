@@ -1,0 +1,42 @@
+.languages {
+  height: languages-height;
+  margin-top: 2vw;
+  overflow: hidden;
+}
+.languages h1 {
+  color: languages-title-color;
+  font-size: languages-title-font-size;
+  font-family: languages-title-font-family;
+}
+.languages .languages-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3vw;
+}
+.languages .languages-container .radial {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: languages-box-size;
+  width: languages-box-size;
+}
+.languages .languages-container .radial img {
+  position: absolute;
+  border-radius: 0.5vw;
+/* Initially hidden until script loads */
+  display: none;
+}
+.languages .languages-container .radial div {
+  height: languages-box-size;
+  width: languages-box-size;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=../map/components/languages.css.map */

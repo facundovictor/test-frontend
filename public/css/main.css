@@ -428,7 +428,7 @@ body .content .text-container p.diamond:before {
   margin-top: 0.7vw;
 }
 body .content .languages {
-  height: 18vw;
+  height: 16vw;
   margin-top: 2vw;
   overflow: hidden;
 }
@@ -453,8 +453,8 @@ body .content .languages .languages-container .radial {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  height: 12vw;
-  width: 12vw;
+  height: 10vw;
+  width: 10vw;
 }
 body .content .languages .languages-container .radial img {
   position: absolute;
@@ -463,9 +463,17 @@ body .content .languages .languages-container .radial img {
   display: none;
 }
 body .content .languages .languages-container .radial div {
-  height: 12vw;
-  width: 12vw;
+  height: 10vw;
+  width: 10vw;
   overflow: hidden;
+}
+body .content .places {
+  margin-top: 2.7vw;
+}
+body .content .places h1 {
+  color: #545a5b;
+  font-family: sans-serif;
+  font-size: 1.7vw;
 }
 
 /*# sourceMappingURL=map/main.css.map */

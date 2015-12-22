@@ -13,10 +13,10 @@ registerToggleMenu = ->
         else
             menu.classed('hidden',true)
 
+
     # Get the menu button
     menu_btn = d3.select '.content .menu-btn'
 
     # Attaches the function to the 'click' event
-    menu_btn.on 'click', toggle_menu
-
+    menu_btn.on 'click.menu', toggle_menu
 

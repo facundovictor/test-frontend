@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/places.styl"],"names":[],"mappings":"AAAA;EACI,kBAAA;;AACA;EACI,0BAAA;EACA,sCAAA;EACA,kCAAA","file":"components/places.css","sourcesContent":[".places\n    margin-top: 2.7vw\n    h1\n        color: places-title-color\n        font-family: places-title-font-family\n        font-size: places-title-font-size\n"],"sourceRoot":"/source/"}

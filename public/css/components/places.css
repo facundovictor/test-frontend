@@ -1,0 +1,10 @@
+.places {
+  margin-top: 2.7vw;
+}
+.places h1 {
+  color: places-title-color;
+  font-family: places-title-font-family;
+  font-size: places-title-font-size;
+}
+
+/*# sourceMappingURL=../map/components/places.css.map */

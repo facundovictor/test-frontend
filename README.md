@@ -128,6 +128,14 @@ I downloaded the psd template and transformed to "template.png".
     ```
       npm install --save d3
     ```
+    1. Datamaps
+      ```
+        npm install --save datamaps
+      ```
+    2. Topojson
+      ```
+        npm install --save topojson
+      ```
 
 2. **Templating decisions:**
 
@@ -157,7 +165,7 @@ I downloaded the psd template and transformed to "template.png".
 
         - Radial progress: Used the library [radial progress](http://www.brightpointinc.com/download/radial-progress-source-code/) and modified it with coffee and stylus to adjust on resize and.
 
-        - Maps: Comming soon...
+        - Maps: Used [Datamaps](http://datamaps.github.io/), i'll add a projection to automatically zoom it.
 
   - More... coming soon!
 
