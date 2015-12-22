@@ -17,7 +17,7 @@ languages_data = [
 renderRadial = (radial, container, img) ->
 
     # Render the radial inside the container and gets its size.
-    size = radial.diameter(container.clientWidth + 26).render().getSize()
+    size = radial.diameter(container.clientWidth + 24).render().getSize()
 
     # Image size factor
     img_size_factor = 0.9
