@@ -20,6 +20,8 @@
   margin-bottom: 0;
   margin-top: auto;
   font-family: sans-serif;
+/* For IE 10 */
+  display: block;
 }
 .moreinfo p.title {
   font-weight: bold;
@@ -29,8 +31,15 @@
 }
 .moreinfo a {
   color: moreinfo-link-color;
+  cursor: pointer;
   font-weight: bold;
   padding-left: 2.5vw;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.moreinfo a:hover {
+  color: moreinfo-link-over-color;
 }
 .moreinfo a:before {
   content: '';

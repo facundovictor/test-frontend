@@ -124,8 +124,10 @@ gulp.task('images', function(){
 // ----------------------------------------------------------------------------
 // DEPENDENCIES
 var d3_src = './node_modules/d3/d3.min.js';
+var radialprogress_src = './src/lib/radialProgress.js';
 gulp.task('dependencies', function(){
     gulp.src(d3_src).pipe(gulp.dest('./public/js/lib/'));
+    gulp.src(radialprogress_src).pipe(gulp.dest('./public/js/lib/'));
 });
 
 // ----------------------------------------------------------------------------

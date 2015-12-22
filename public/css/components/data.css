@@ -38,7 +38,7 @@
 }
 .data div p:first-child {
   font-size: data-value-font-size;
-  line-height: calc(data-height / 2);
+  line-height: data-line-height;
   font-weight: bold;
   position: relative;
 }

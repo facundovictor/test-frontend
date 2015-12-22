@@ -1,19 +1,18 @@
 # @author facundovictor
 ##############################################
 
+# Here is stored the radial elements for redraw purposes
+radials = []
+
 window.onload = (evt) ->
-    # Toggle menu visibility
-    toggle_menu = (evt) ->
-        menu = d3.select '.menu'
-        if menu.classed 'hidden'
-            menu.classed('hidden',false)
-        else
-            menu.classed('hidden',true)
+    # Configure the Hamburguer button to toggle the menu
+    # visibilty on click
+    registerToggleMenu()
 
-    # Get the menu button
-    menu_btn = d3.select '.content .menu-btn'
+    # Load all radials and keeps it for redraw them on resize
+    radials = loadRadials()
 
-    # Attaches the function to the 'click' event
-    menu_btn.on 'click', toggle_menu
-
+window.onresize = (evt) ->
+    # Reloads all stored radials
+    reloadRadials radials
 

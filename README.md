@@ -155,5 +155,9 @@ I downloaded the psd template and transformed to "template.png".
 
   - Graphics: For graphics and event handler i chose the D3 library.
 
+        - Radial progress: Used the library [radial progress](http://www.brightpointinc.com/download/radial-progress-source-code/) and modified it with coffee and stylus to adjust on resize and.
+
+        - Maps: Comming soon...
+
   - More... coming soon!
 

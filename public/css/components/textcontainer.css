@@ -1,0 +1,24 @@
+.text-container {
+  font-family: sans-serif;
+  line-height: 3vw;
+  font-size: text-container-text-font-size;
+  overflow: hidden;
+}
+.text-container p.diamond {
+  padding-left: 4vw;
+  margin: 0;
+}
+.text-container p.diamond:before {
+  content: '';
+  width: text-container-text-font-size;
+  height: text-container-text-font-size;
+  background-image: url("../images/svg/diamond.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 6.5vw;
+  margin-top: 0.7vw;
+}
+
+/*# sourceMappingURL=../map/components/textcontainer.css.map */

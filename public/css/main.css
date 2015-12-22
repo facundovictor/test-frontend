@@ -1,5 +1,45 @@
 /* author: @facundovictor */
 /* Importing configuration */
+.background {
+  fill: #fff;
+  fill-opacity: 0.01;
+}
+.component {
+  fill: #e1e1e1;
+}
+.component .label {
+  font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+  text-anchor: middle;
+  fill: #00f;
+}
+.arc {
+  stroke-weight: 0.1;
+  fill: #a2b4b3;
+}
+.arc2 {
+  stroke-weight: 0.1;
+  fill: #a2b4b3;
+}
+.label {
+  font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+  text-anchor: middle;
+}
+.radial-svg {
+  display: block;
+  margin: 0 auto;
+/* hidding the percent */
+/* Loading required colors */
+}
+.radial-svg text {
+  display: none;
+}
+.radial-svg .component path {
+  fill: #f2f6f5 !important;
+}
+.radial-svg .arcs .arc,
+.radial-svg .arcs .arc2 {
+  fill: #a2b4b3 !important;
+}
 * {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -171,7 +211,7 @@ body .menu .data div p {
 }
 body .menu .data div p:first-child {
   font-size: 2vw;
-  line-height: calc(7.91vw / 2);
+  line-height: 3.955vw /* Doing the calc here because of IE 10 */;
   font-weight: bold;
   position: relative;
 }
@@ -298,6 +338,8 @@ body .menu .moreinfo a {
   margin-bottom: 0;
   margin-top: auto;
   font-family: sans-serif;
+/* For IE 10 */
+  display: block;
 }
 body .menu .moreinfo p.title {
   font-weight: bold;
@@ -307,8 +349,15 @@ body .menu .moreinfo p.body {
 }
 body .menu .moreinfo a {
   color: #8e9393;
+  cursor: pointer;
   font-weight: bold;
   padding-left: 2.5vw;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+body .menu .moreinfo a:hover {
+  color: #276363;
 }
 body .menu .moreinfo a:before {
   content: '';
@@ -352,9 +401,9 @@ body .content {
   position: absolute;
 }
 body .content .menu-btn {
-  width: 3vw;
-  height: 3vw;
   cursor: pointer;
+  height: 3vw;
+  width: 3vw;
 }
 body .content .text-container {
   font-family: sans-serif;
@@ -377,6 +426,46 @@ body .content .text-container p.diamond:before {
   position: absolute;
   left: 6.5vw;
   margin-top: 0.7vw;
+}
+body .content .languages {
+  height: 18vw;
+  margin-top: 2vw;
+  overflow: hidden;
+}
+body .content .languages h1 {
+  color: #545a5b;
+  font-size: 1.7vw;
+  font-family: sans-serif;
+}
+body .content .languages .languages-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3vw;
+}
+body .content .languages .languages-container .radial {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 12vw;
+  width: 12vw;
+}
+body .content .languages .languages-container .radial img {
+  position: absolute;
+  border-radius: 0.5vw;
+/* Initially hidden until script loads */
+  display: none;
+}
+body .content .languages .languages-container .radial div {
+  height: 12vw;
+  width: 12vw;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=map/main.css.map */

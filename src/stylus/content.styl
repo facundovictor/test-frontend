@@ -5,28 +5,38 @@
     position: absolute
  
     .menu-btn
-        width: menu-button-size
-        height: menu-button-size
         cursor: pointer
+        height: menu-button-size
+        width: menu-button-size
 
-    .text-container
-        font-family: sans-serif
-        line-height: 3vw
-        font-size: text-container-text-font-size
+    @import './components/textcontainer.styl'
+
+    .languages
+        height: languages-height
+        margin-top: 2vw
         overflow: hidden
-       
-        p.diamond
-            padding-left: 4vw
-            margin: 0
-
-        p.diamond:before
-            content: ''
-            width: text-container-text-font-size
-            height: text-container-text-font-size
-            background-image: url('../images/svg/diamond.svg')
-            background-repeat: no-repeat
-            background-position: center
-            background-size: contain
-            position: absolute
-            left: 6.5vw
-            margin-top: 0.7vw
+        h1
+            color: languages-title-color
+            font-size: languages-title-font-size
+            font-family: languages-title-font-family
+        .languages-container
+            display: flex
+            flex-direction: row
+            margin-top: 3vw
+            .radial
+                margin: 0 auto
+                overflow: hidden
+                position:relative
+                height: languages-box-size
+                width: languages-box-size
+                img
+                    position: absolute
+                    border-radius: 0.5vw
+                    /* Initially hidden until script loads */
+                    display: none
+                div
+                    height: languages-box-size
+                    width: languages-box-size
+                    overflow: hidden
+                    
+ 

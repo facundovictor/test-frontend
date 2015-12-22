@@ -13,6 +13,9 @@
         margin-top: auto
         font-family: sans-serif
 
+        /* For IE 10 */
+        display: block
+
     p.title
         font-weight: bold
     p.body
@@ -20,8 +23,13 @@
 
     a
         color: moreinfo-link-color
+        cursor: pointer
         font-weight: bold
         padding-left: 2.5vw
+        text-decoration: none
+        transition color 0.5s
+    a:hover
+        color: moreinfo-link-over-color
     a:before
         content:''
         background-repeat: no-repeat
