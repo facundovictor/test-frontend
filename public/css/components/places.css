@@ -43,5 +43,18 @@
 .places .reference .point:last-child div {
   background-color: places-reference-cultural-color;
 }
+@media screen and (max-width: tablet-width) {
+  .places h1 {
+    font-size: places-title-font-size-tablet;
+  }
+  .places .reference .point p {
+    font-size: places-reference-font-size-tablet;
+    margin: 0 auto 0 3vw;
+  }
+  .places .reference .point div {
+    height: places-reference-font-size-tablet;
+    width: places-reference-font-size-tablet;
+  }
+}
 
 /*# sourceMappingURL=../map/components/places.css.map */

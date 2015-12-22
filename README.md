@@ -37,7 +37,7 @@ For example:
 
 ###### Please fork this repository and commit each step of your process.
 
-**Below, i'll be posting my solution**
+**Below, my solution**
 
 I downloaded the psd template and transformed to "template.png".
 
@@ -167,5 +167,5 @@ I downloaded the psd template and transformed to "template.png".
 
         - Maps: Used [Datamaps](http://datamaps.github.io/). Used the 'mercator' projection with custom center and scale values.
 
-  - More... coming soon!
+  - More... coming soon! Browser tested.
 

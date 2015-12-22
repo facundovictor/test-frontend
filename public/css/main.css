@@ -137,6 +137,16 @@ body .menu .presentation .profile .flag svg path {
 body .menu .presentation .profile .flag svg path:first-child {
   fill: #56ff2c;
 }
+@media screen and (max-width: 678px) {
+  body .menu .presentation .profile .flag {
+    width: calc(8vw - 1vw);
+    height: calc(8vw - 1vw);
+  }
+  body .menu .presentation .profile .flag svg {
+    height: calc(8vw - 0.7vw);
+    width: calc(8vw - 0.7vw);
+  }
+}
 body .menu .presentation h1,
 body .menu .presentation h2 {
   text-align: center;
@@ -170,6 +180,46 @@ body .menu .presentation h2:nth-child(4):before {
   overflow: hidden;
   position: absolute;
   left: 4.5vw;
+}
+@media screen and (max-width: 678px) {
+  body .menu .presentation {
+    width: 80vw;
+  }
+  body .menu .presentation .profile {
+    margin-left: 4vw;
+  }
+  body .menu .presentation .profile img {
+    width: 20vw;
+  }
+  body .menu .presentation .profile .flag {
+    top: calc(13vw + 4vw);
+    left: calc(14vw + 4vw);
+  }
+  body .menu .presentation h1,
+  body .menu .presentation h2 {
+    position: absolute;
+    left: 30vw;
+  }
+  body .menu .presentation h1:nth-child(2) {
+    font-size: 3.6vw;
+    top: 4.5vw;
+  }
+  body .menu .presentation h1:nth-child(3) {
+    font-size: 3vw;
+    font-style: italic;
+    top: 13vw;
+  }
+  body .menu .presentation h2:nth-child(4) {
+    font-size: 2vw;
+    top: 18.5vw;
+    padding-left: 2vw;
+  }
+  body .menu .presentation h2:nth-child(4):before {
+    background-size: 2vw 2.2vw;
+    left: 0;
+    height: 2vw;
+    width: 2.2vw;
+  }
 }
 body .menu .data {
   height: 7.91vw;
@@ -225,6 +275,26 @@ body .menu .data div p:first-child > * {
 }
 body .menu .data div p:nth-child(2) {
   font-size: 1vw;
+}
+@media screen and (max-width: 678px) {
+  body .menu .data {
+    height: 15vw;
+    width: 80vw;
+  }
+  body .menu .data div {
+    height: 15vw;
+  }
+  body .menu .data div p {
+    height: calc(15vw / 2);
+  }
+  body .menu .data div p:first-child {
+    line-height: 7.5vw /* Doing the calc here because of IE 10 */;
+    font-size: 4vw;
+  }
+  body .menu .data div p:nth-child(2) {
+    font-size: 2vw;
+    padding-top: 1vw;
+  }
 }
 body .menu .toolbar {
   overflow: hidden;
@@ -316,6 +386,20 @@ body .menu .toolbar .btn.active p {
 body .menu .toolbar .btn:hover {
   background-color: #e8f1f1;
 }
+@media screen and (max-width: 678px) {
+  body .menu .toolbar {
+    width: 80vw;
+  }
+  body .menu .toolbar .btn div {
+    background-size: calc(10vw / 2);
+    height: 10vw;
+  }
+  body .menu .toolbar .btn p {
+    height: 10vw;
+    line-height: 10vw;
+    font-size: 3vw;
+  }
+}
 body .menu .moreinfo {
   height: 25.24vw;
   width: 23.8vw;
@@ -388,8 +472,39 @@ body .menu .moreinfo a.linkedin:before {
   background-size: 1.7vw;
   width: 1.7vw;
 }
+@media screen and (max-width: 678px) {
+  body .menu .moreinfo {
+    height: 30vw;
+    width: 80vw;
+  }
+  body .menu .moreinfo p,
+  body .menu .moreinfo a {
+    font-size: 1.9vw;
+  }
+  body .menu .moreinfo a {
+    padding-left: 3.2vw;
+  }
+  body .menu .moreinfo a:before {
+    height: 1.9vw;
+    width: 1.9vw;
+  }
+  body .menu .moreinfo a.twitter:before {
+    background-size: 2vw;
+    width: 2.2vw;
+  }
+  body .menu .moreinfo a.linkedin:before {
+    background-size: 2.2vw;
+    width: 2.2vw;
+  }
+}
 body .menu.hidden {
   width: 0;
+}
+@media screen and (max-width: 678px) {
+  body .menu {
+    width: 80vw;
+    max-width: 80vw;
+  }
 }
 body .content {
   background-color: #fff;
@@ -426,6 +541,19 @@ body .content .text-container p.diamond:before {
   position: absolute;
   left: 6.5vw;
   margin-top: 0.7vw;
+}
+@media screen and (max-width: 678px) {
+  body .content .text-container {
+    font-size: 2.3vw;
+  }
+  body .content .text-container p.diamond {
+    padding-left: 5vw;
+  }
+  body .content .text-container p.diamond:before {
+    width: 2.3vw;
+    height: 2.3vw;
+    margin-top: 0.3vw;
+  }
 }
 body .content .languages {
   height: 16vw;
@@ -466,6 +594,22 @@ body .content .languages .languages-container .radial div {
   height: 10vw;
   width: 10vw;
   overflow: hidden;
+}
+@media screen and (max-width: 678px) {
+  body .content .languages {
+    height: 20vw;
+  }
+  body .content .languages h1 {
+    font-size: 2.4vw;
+  }
+  body .content .languages .languages-container .radial {
+    height: 12vw;
+    width: 12vw;
+  }
+  body .content .languages .languages-container .radial div {
+    height: 12vw;
+    width: 12vw;
+  }
 }
 body .content .places {
   margin-top: 2.7vw;
@@ -511,6 +655,25 @@ body .content .places .reference .point:first-child div {
 }
 body .content .places .reference .point:last-child div {
   background-color: #3665ff;
+}
+@media screen and (max-width: 678px) {
+  body .content .places h1 {
+    font-size: 2.4vw;
+  }
+  body .content .places .reference .point p {
+    font-size: 2vw;
+    margin: 0 auto 0 3vw;
+  }
+  body .content .places .reference .point div {
+    height: 2vw;
+    width: 2vw;
+  }
+}
+@media screen and (max-width: 678px) {
+  body .content .menu-btn {
+    height: 5vw;
+    width: 5vw;
+  }
 }
 
 /*# sourceMappingURL=map/main.css.map */

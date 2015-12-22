@@ -34,6 +34,19 @@
   left: 6.5vw;
   margin-top: 0.7vw;
 }
+@media screen and (max-width: tablet-width) {
+  .content .text-container {
+    font-size: text-container-text-font-size-tablet;
+  }
+  .content .text-container p.diamond {
+    padding-left: 5vw;
+  }
+  .content .text-container p.diamond:before {
+    width: text-container-text-font-size-tablet;
+    height: text-container-text-font-size-tablet;
+    margin-top: 0.3vw;
+  }
+}
 .content .languages {
   height: languages-height;
   margin-top: 2vw;
@@ -73,6 +86,22 @@
   height: languages-box-size;
   width: languages-box-size;
   overflow: hidden;
+}
+@media screen and (max-width: tablet-width) {
+  .content .languages {
+    height: languages-height-tablet;
+  }
+  .content .languages h1 {
+    font-size: languages-title-font-size-tablet;
+  }
+  .content .languages .languages-container .radial {
+    height: languages-box-size-tablet;
+    width: languages-box-size-tablet;
+  }
+  .content .languages .languages-container .radial div {
+    height: languages-box-size-tablet;
+    width: languages-box-size-tablet;
+  }
 }
 .content .places {
   margin-top: 2.7vw;
@@ -118,6 +147,25 @@
 }
 .content .places .reference .point:last-child div {
   background-color: places-reference-cultural-color;
+}
+@media screen and (max-width: tablet-width) {
+  .content .places h1 {
+    font-size: places-title-font-size-tablet;
+  }
+  .content .places .reference .point p {
+    font-size: places-reference-font-size-tablet;
+    margin: 0 auto 0 3vw;
+  }
+  .content .places .reference .point div {
+    height: places-reference-font-size-tablet;
+    width: places-reference-font-size-tablet;
+  }
+}
+@media screen and (max-width: tablet-width) {
+  .content .menu-btn {
+    height: menu-button-size-tablet;
+    width: menu-button-size-tablet;
+  }
 }
 
 /*# sourceMappingURL=map/content.css.map */

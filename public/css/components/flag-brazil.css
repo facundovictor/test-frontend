@@ -20,5 +20,15 @@
 .flag svg path:first-child {
   fill: flag-brazil-color-green;
 }
+@media screen and (max-width: tablet-width) {
+  .flag {
+    width: calc(profile-flag-image-size-tablet - 1vw);
+    height: calc(profile-flag-image-size-tablet - 1vw);
+  }
+  .flag svg {
+    height: calc(profile-flag-image-size-tablet - 0.7vw);
+    width: calc(profile-flag-image-size-tablet - 0.7vw);
+  }
+}
 
 /*# sourceMappingURL=../map/components/flag-brazil.css.map */

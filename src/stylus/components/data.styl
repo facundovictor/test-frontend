@@ -26,3 +26,20 @@
             lost-align: bottom
         p:nth-child(2)
             font-size: data-title-font-size 
+
+@media screen and (max-width: tablet-width)
+    .data
+        height: data-height-tablet
+        width: data-width-tablet
+        div
+            height: data-height-tablet
+            p
+                height: "calc(%s / 2)" % data-height-tablet
+            p:first-child
+                line-height: data-line-height-tablet
+                font-size: data-value-font-size-tablet
+            p:nth-child(2)
+                font-size: data-title-font-size-tablet 
+                padding-top: 1vw
+
+

@@ -49,4 +49,34 @@
         position: absolute
         left: 4.5vw
         
+@media screen and (max-width: tablet-width)
+    .presentation
+        width: profile-presentation-width-tablet
+        .profile
+            margin-left: 4vw 
+            img
+                width: profile-image-width-tablet 
+            .flag
+                top: "calc(%s + %s)" % (profile-flag-top-tablet profile-image-margin)
+                left: "calc(%s + %s)" % (profile-flag-left-tablet profile-image-margin)
+
+        h1, h2
+            position: absolute;
+            left: 30vw;
+        h1:nth-child(2)
+            font-size: profile-name-font-size-tablet
+            top: 4.5vw
+        h1:nth-child(3)
+            font-size: profile-title-font-size-tablet
+            font-style: italic
+            top: 13vw
+        h2:nth-child(4)
+            font-size: profile-location-font-size-tablet
+            top: 18.5vw
+            padding-left: profile-location-font-size-tablet
+        h2:nth-child(4):before
+            background-size: profile-location-height-tablet profile-location-width-tablet
+            left: 0
+            height: profile-location-height-tablet
+            width: profile-location-width-tablet
 

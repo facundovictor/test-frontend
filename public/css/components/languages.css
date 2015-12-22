@@ -38,5 +38,21 @@
   width: languages-box-size;
   overflow: hidden;
 }
+@media screen and (max-width: tablet-width) {
+  .languages {
+    height: languages-height-tablet;
+  }
+  .languages h1 {
+    font-size: languages-title-font-size-tablet;
+  }
+  .languages .languages-container .radial {
+    height: languages-box-size-tablet;
+    width: languages-box-size-tablet;
+  }
+  .languages .languages-container .radial div {
+    height: languages-box-size-tablet;
+    width: languages-box-size-tablet;
+  }
+}
 
 /*# sourceMappingURL=../map/components/languages.css.map */

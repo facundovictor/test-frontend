@@ -69,6 +69,16 @@
 .menu .presentation .profile .flag svg path:first-child {
   fill: flag-brazil-color-green;
 }
+@media screen and (max-width: tablet-width) {
+  .menu .presentation .profile .flag {
+    width: calc(profile-flag-image-size-tablet - 1vw);
+    height: calc(profile-flag-image-size-tablet - 1vw);
+  }
+  .menu .presentation .profile .flag svg {
+    height: calc(profile-flag-image-size-tablet - 0.7vw);
+    width: calc(profile-flag-image-size-tablet - 0.7vw);
+  }
+}
 .menu .presentation h1,
 .menu .presentation h2 {
   text-align: center;
@@ -102,6 +112,46 @@
   overflow: hidden;
   position: absolute;
   left: 4.5vw;
+}
+@media screen and (max-width: tablet-width) {
+  .menu .presentation {
+    width: profile-presentation-width-tablet;
+  }
+  .menu .presentation .profile {
+    margin-left: 4vw;
+  }
+  .menu .presentation .profile img {
+    width: profile-image-width-tablet;
+  }
+  .menu .presentation .profile .flag {
+    top: calc(profile-flag-top-tablet + profile-image-margin);
+    left: calc(profile-flag-left-tablet + profile-image-margin);
+  }
+  .menu .presentation h1,
+  .menu .presentation h2 {
+    position: absolute;
+    left: 30vw;
+  }
+  .menu .presentation h1:nth-child(2) {
+    font-size: profile-name-font-size-tablet;
+    top: 4.5vw;
+  }
+  .menu .presentation h1:nth-child(3) {
+    font-size: profile-title-font-size-tablet;
+    font-style: italic;
+    top: 13vw;
+  }
+  .menu .presentation h2:nth-child(4) {
+    font-size: profile-location-font-size-tablet;
+    top: 18.5vw;
+    padding-left: profile-location-font-size-tablet;
+  }
+  .menu .presentation h2:nth-child(4):before {
+    background-size: profile-location-height-tablet profile-location-width-tablet;
+    left: 0;
+    height: profile-location-height-tablet;
+    width: profile-location-width-tablet;
+  }
 }
 .menu .data {
   height: data-height;
@@ -157,6 +207,26 @@
 }
 .menu .data div p:nth-child(2) {
   font-size: data-title-font-size;
+}
+@media screen and (max-width: tablet-width) {
+  .menu .data {
+    height: data-height-tablet;
+    width: data-width-tablet;
+  }
+  .menu .data div {
+    height: data-height-tablet;
+  }
+  .menu .data div p {
+    height: calc(data-height-tablet / 2);
+  }
+  .menu .data div p:first-child {
+    line-height: data-line-height-tablet;
+    font-size: data-value-font-size-tablet;
+  }
+  .menu .data div p:nth-child(2) {
+    font-size: data-title-font-size-tablet;
+    padding-top: 1vw;
+  }
 }
 .menu .toolbar {
   overflow: hidden;
@@ -248,6 +318,20 @@
 .menu .toolbar .btn:hover {
   background-color: menu-hover-background-color;
 }
+@media screen and (max-width: tablet-width) {
+  .menu .toolbar {
+    width: toolbar-width-tablet;
+  }
+  .menu .toolbar .btn div {
+    background-size: calc(toolbar-button-height-tablet / 2);
+    height: toolbar-button-height-tablet;
+  }
+  .menu .toolbar .btn p {
+    height: toolbar-button-height-tablet;
+    line-height: toolbar-button-height-tablet;
+    font-size: toolbar-button-font-size-tablet;
+  }
+}
 .menu .moreinfo {
   height: moreinfo-height;
   width: menu-width;
@@ -320,8 +404,39 @@
   background-size: 1.7vw;
   width: 1.7vw;
 }
+@media screen and (max-width: tablet-width) {
+  .menu .moreinfo {
+    height: moreinfo-height-tablet;
+    width: menu-width-tablet;
+  }
+  .menu .moreinfo p,
+  .menu .moreinfo a {
+    font-size: moreinfo-font-size-tablet;
+  }
+  .menu .moreinfo a {
+    padding-left: 3.2vw;
+  }
+  .menu .moreinfo a:before {
+    height: moreinfo-font-size-tablet;
+    width: moreinfo-font-size-tablet;
+  }
+  .menu .moreinfo a.twitter:before {
+    background-size: 2vw;
+    width: 2.2vw;
+  }
+  .menu .moreinfo a.linkedin:before {
+    background-size: 2.2vw;
+    width: 2.2vw;
+  }
+}
 .menu.hidden {
   width: 0;
+}
+@media screen and (max-width: tablet-width) {
+  .menu {
+    width: menu-width-tablet;
+    max-width: menu-width-tablet;
+  }
 }
 
 /*# sourceMappingURL=map/menu.css.map */

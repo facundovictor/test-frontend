@@ -88,5 +88,19 @@
 .toolbar .btn:hover {
   background-color: menu-hover-background-color;
 }
+@media screen and (max-width: tablet-width) {
+  .toolbar {
+    width: toolbar-width-tablet;
+  }
+  .toolbar .btn div {
+    background-size: calc(toolbar-button-height-tablet / 2);
+    height: toolbar-button-height-tablet;
+  }
+  .toolbar .btn p {
+    height: toolbar-button-height-tablet;
+    line-height: toolbar-button-height-tablet;
+    font-size: toolbar-button-font-size-tablet;
+  }
+}
 
 /*# sourceMappingURL=../map/components/toolbar.css.map */

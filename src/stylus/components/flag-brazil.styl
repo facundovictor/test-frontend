@@ -16,3 +16,12 @@
             fill: flag-brazil-color-blue
         path:first-child
             fill: flag-brazil-color-green
+
+@media screen and (max-width: tablet-width)
+    .flag
+        width: "calc(%s - 1vw)" % (profile-flag-image-size-tablet)
+        height: "calc(%s - 1vw)" % (profile-flag-image-size-tablet)
+        svg
+            height: "calc(%s - 0.7vw)" % profile-flag-image-size-tablet
+            width: "calc(%s - 0.7vw)" % profile-flag-image-size-tablet
+        

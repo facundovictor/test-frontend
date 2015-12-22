@@ -70,5 +70,30 @@
   background-size: 1.7vw;
   width: 1.7vw;
 }
+@media screen and (max-width: tablet-width) {
+  .moreinfo {
+    height: moreinfo-height-tablet;
+    width: menu-width-tablet;
+  }
+  .moreinfo p,
+  .moreinfo a {
+    font-size: moreinfo-font-size-tablet;
+  }
+  .moreinfo a {
+    padding-left: 3.2vw;
+  }
+  .moreinfo a:before {
+    height: moreinfo-font-size-tablet;
+    width: moreinfo-font-size-tablet;
+  }
+  .moreinfo a.twitter:before {
+    background-size: 2vw;
+    width: 2.2vw;
+  }
+  .moreinfo a.linkedin:before {
+    background-size: 2.2vw;
+    width: 2.2vw;
+  }
+}
 
 /*# sourceMappingURL=../map/components/moreinfo.css.map */

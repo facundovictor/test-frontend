@@ -45,3 +45,15 @@
             color: black
     .btn:hover
         background-color: menu-hover-background-color
+
+@media screen and (max-width: tablet-width)
+    .toolbar
+        width: toolbar-width-tablet    
+        .btn
+            div
+                background-size: "calc(%s / 2)" % toolbar-button-height-tablet
+                height: toolbar-button-height-tablet
+            p
+                height: toolbar-button-height-tablet
+                line-height: toolbar-button-height-tablet
+                font-size: toolbar-button-font-size-tablet
