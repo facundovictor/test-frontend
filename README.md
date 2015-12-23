@@ -167,5 +167,9 @@ I downloaded the psd template and transformed to "template.png".
 
         - Maps: Used [Datamaps](http://datamaps.github.io/). Used the 'mercator' projection with custom center and scale values.
 
-  - More... coming soon! Browser tested.
+  - Browsers tested:
+
+        - IE 10 & 11
+        - Chrome 47
+        - Firefox 43
 
