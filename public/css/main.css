@@ -190,6 +190,8 @@ body .menu .presentation h2:nth-child(4):before {
   }
   body .menu .presentation .profile img {
     width: 20vw;
+/* For IE support */
+    display: inline;
   }
   body .menu .presentation .profile .flag {
     top: calc(13vw + 4vw);
@@ -674,6 +676,18 @@ body .content .places .reference .point:last-child div {
     height: 5vw;
     width: 5vw;
   }
+}
+@-o-viewport {
+  zoom: 1;
+  width: extend-to-zoom;
+}
+@viewport {
+  zoom: 1;
+  width: extend-to-zoom;
+}
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1;
 }
 
 /*# sourceMappingURL=map/main.css.map */

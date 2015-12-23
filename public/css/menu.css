@@ -122,6 +122,8 @@
   }
   .menu .presentation .profile img {
     width: profile-image-width-tablet;
+/* For IE support */
+    display: inline;
   }
   .menu .presentation .profile .flag {
     top: calc(profile-flag-top-tablet + profile-image-margin);

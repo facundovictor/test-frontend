@@ -104,6 +104,8 @@
   }
   .presentation .profile img {
     width: profile-image-width-tablet;
+/* For IE support */
+    display: inline;
   }
   .presentation .profile .flag {
     top: calc(profile-flag-top-tablet + profile-image-margin);
